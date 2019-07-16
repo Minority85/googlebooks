@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark hfix">
       <a className="navbar-brand" href="/">
         <img src="./images/gbooks.png" alt="Google Books"></img>
       </a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/search">Search <span class="sr-only">(current)</span></a>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <Link className="nav-link" to={"/search"}>Search <span className="sr-only">(current)</span></Link> 
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/saved">Save</a>
+          <li className="nav-item">
+            <a className="nav-link" href="/saved">Save</a>
           </li>
         </ul>
       </div>

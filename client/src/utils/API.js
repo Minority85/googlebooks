@@ -1,7 +1,7 @@
 import axios from "axios";
 require("dotenv").config();
 
-const { APIKEY } = process.env;
+const APIKEY = process.env.APIKEY;
 
 export default {
   getBooks: function(query) {
